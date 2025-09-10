@@ -4,10 +4,14 @@ def num_words(text):
 
 def count_characters(text):
     dict = {}
-    text = text.lower()
-    for letter in text:
-        if letter not in dict:
-            dict[letter] = 1
+    for character in text:
+        lowered = character.lower()
+        if lowered not in dict:
+            dict[lowered] = 1
         else:
-            dict[letter]+=1
+            dict[lowered] +=1
     return dict
+
+def sorted_list(dict):
+    main_dict = {}
+    
